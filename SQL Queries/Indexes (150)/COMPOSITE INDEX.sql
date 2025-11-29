@@ -5,9 +5,13 @@
 -- =============================================
 
 -- 1. Create a composite index on CustomerName, City in customers.
+CREATE INDEX IX_Customers_CustomerName_City 
+    ON customers(CustomerName, City);
 
 -- 2. Create a composite index on Country, City in customers.
-
+CREATE INDEX IX_Customers_Country_City 
+    ON customers(Country, City);
+    
 -- 3. Create a composite index on CategoryID, SupplierID in products.
 
 -- 4. Create a composite index on UnitsInStock, UnitsOnOrder in products.

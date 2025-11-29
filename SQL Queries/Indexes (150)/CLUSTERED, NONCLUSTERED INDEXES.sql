@@ -6,18 +6,41 @@
 -- =============================================
 
 -- 1. Create a clustered index on CustomerID in customers.
+CREATE INDEX IX_CustomerID ON customers(CustomerID);
 
 -- 2. Create a clustered index on ProductID in products.
+CREATE INDEX IX_Products_ProductID
+ON Products (ProductID ASC);
 
 -- 3. Create a clustered index on OrderID in orders.
+CREATE INDEX IX_orders_OrderID
+ON orders (OrderID ASC);
+
+select *from orders;
 
 -- 4. Create a clustered index on EmployeeID in employees.
+CREATE INDEX IX_Employees_EmployeeID 
+ON Employees ( EmployeeID ASC);
+
+select*from employees;
 
 -- 5. Create a clustered index on ShipperID in shippers.
+CREATE INDEX IX_Shippers_ShipperID 
+ON Shippers (ShipperID  desc);
+
+select*from Shippers;
 
 -- 6. Create a clustered index on SupplierID in suppliers.
+CREATE INDEX IX_Suppliers_SupplierID
+ON suppliers (SupplierID asc);
+
+select*from Suppliers;
 
 -- 7. Create a clustered index on CategoryID in categories.
+CREATE INDEX IX_Categories_CategoryID
+ON Categories (CategoryID ASC);
+
+select *from categories;
 
 -- 8. Create a nonclustered index on CustomerName in customers.
 

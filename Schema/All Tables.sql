@@ -8,9 +8,6 @@ CREATE TABLE categories (
     DescriptionText VARCHAR(255)         -- Description of the category
 );
 
-
-
-
 -- ===========================================================
 -- TABLE: suppliers
 -- ===========================================================

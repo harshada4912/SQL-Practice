@@ -142,6 +142,7 @@ CREATE INDEX idx_products_categoryid_join ON products(CategoryID);
 CREATE INDEX idx_orders_customerid_join ON orders(CustomerID);
 
 -- 43. Create an index on EmployeeID in orders for faster JOIN with employees.
+CREATE INDEX idx_orders_EmployeeID_join ON orders(EmployeeID);
 
 -- 44. Create an index on ShipperID in orders for faster JOIN with shippers.
 

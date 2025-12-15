@@ -89,7 +89,6 @@ from orders;
 -- 20. Get the last 3 characters of PostalCode + Country concatenated
 select right(concat(PostalCode,Country),3) As Last3Concat
 from customers;
-from customers;
 
 
 
